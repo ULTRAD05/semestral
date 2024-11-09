@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Pacientes</title>
+</head>
+<body>
+    <form action="registrar_paciente.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br>
+        <label for="tipo_sangre">Tipo de Sangre:</label>
+        <select id="tipo_sangre" name="tipo_sangre">
+            <option value="A+">A+</option>
+            <option value="O+">O+</option>
+            <option value="B+">B+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="O-">O-</option>
+            <option value="B-">B-</option>
+            <option value="AB-">AB-</option>
+        </select><br>
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" name="especialidad">
+            <option value="medicina interna">Medicina Interna</option>
+            <option value="nefrología">Nefrología</option>
+            <option value="endocrinología">Endocrinología</option>
+            <option value="cardiología">Cardiología</option>
+        </select><br>
+        <button type="submit">Registrar Paciente</button>
+    </form>
+</body>
+</html>

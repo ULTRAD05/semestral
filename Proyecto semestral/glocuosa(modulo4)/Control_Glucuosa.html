@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Glucosa</title>
+</head>
+<body>
+    <form onsubmit="registrarLecturaGlucosa(); return false;">
+        <label for="lectura">Lectura de Glucosa (mg/dL):</label>
+        <input type="number" id="lectura" required><br>
+        <label for="momento">Momento de la Toma:</label>
+        <select id="momento">
+            <option value="ayunas">Ayunas</option>
+            <option value="antes">Antes de la comida</option>
+            <option value="2horas">2 horas después de comer</option>
+        </select><br>
+        <button type="submit">Registrar Lectura</button>
+    </form>
+
+    <script src="Control_Glucuosa.js"></script>
+</body>
+</html>

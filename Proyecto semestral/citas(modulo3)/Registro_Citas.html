@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Citas</title>
+</head>
+<body>
+    <form action="citas.js" method="post">
+        <label for="nombrePaciente">Nombre del Paciente:</label>
+        <input type="text" id="nombrePaciente" name="nombrePaciente" required><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" name="especialidad">
+            <option value="medicina interna">Medicina Interna</option>
+            <option value="nefrología">Nefrología</option>
+            <option value="endocrinología">Endocrinología</option>
+            <option value="cardiología">Cardiología</option>
+        </select><br>
+        <button type="submit">Registrar Cita</button>
+    </form>
+</body>
+</html>
